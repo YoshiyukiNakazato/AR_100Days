@@ -25,7 +25,7 @@ extension RootViewController: UITableViewDataSource, UITableViewDelegate {
         cell.textLabel?.text = day.title
         cell.detailTextLabel?.text = day.detail
         cell.selectionStyle = day.enabled ? .default : .none
-        cell.textLabel?.textColor = day.enabled ? .black : .lightGray
+        cell.textLabel?.textColor = day.enabled ? .label : .gray
 //        cell.backgroundColor = day.enabled ? nil : .lightGray
 //        cell.contentView.alpha = day.enabled ? 1 : 0.5
         return cell
